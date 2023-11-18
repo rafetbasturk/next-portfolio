@@ -1,0 +1,159 @@
+{
+  "links": [
+    {
+      "name": "Home",
+      "section": "Home",
+      "hash": "#home"
+    },
+    {
+      "name": "About",
+      "section": "About",
+      "hash": "#about"
+    },
+    {
+      "name": "Projects",
+      "section": "Projects",
+      "hash": "#projects"
+    },
+    {
+      "name": "Skills",
+      "section": "Skills",
+      "hash": "#skills"
+    },
+    {
+      "name": "Contact",
+      "section": "Contact",
+      "hash": "#contact"
+    }
+  ],
+  "intro": {
+    "text": "Hello, I'm Rafet. I started web development in 2019 by taking online courses. I build web applications utilizing the power of 'MERN Stack' technologies.",
+    "btn1": "Contact me",
+    "btn2": "Download CV",
+    "heading": "Intro"
+  },
+  "about": {
+    "heading": "About me",
+    "p1": "My journey into the world of web development started with a curiosity for coding, and it has evolved into a commitment to mastering ReactJS. I am on a journey of constantly learning the technologies involved. Although my core stack is MongoDB, Express, React and Node.js, I like to add something to myself by learning new technologies in my spare time. I'm currently improving myself on Next.js and Typescript.",
+    "p2": "In the past, I have developed:",
+    "list": [
+      {
+        "Static Websites (Frontend)": " using HTML, CSS, JavaScript, React,"
+      },
+      {
+        "Full Scale Web Apps (Frontend + Backend)": " with MongoDB, Express, React ve Node.js,"
+      },
+      {
+        "RESTful Web APIs (Backend)": " using Node.js and Express."
+      }
+    ]
+  },
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "React Query",
+    "Node.js",
+    "Express",
+    "Git",
+    "SCSS",
+    "Tailwind",
+    "Styled Components",
+    "Framer Motion",
+    "MongoDB",
+    "Supabase"
+  ],
+  "projects": [
+    {
+      "title": "Odinbook",
+      "description": "A MERN project that clones some Facebook functionalities. Core functionalities in this project are sign in/sign up, authentication, user search and image upload. Demo user is available.",
+      "tags": ["MongoDB", "Express", "React", "NodeJS", "Styled Components"],
+      "links": {
+        "gh": "https://github.com/rafetbasturk/odinbook",
+        "live": "https://rafet-odinbook.onrender.com/"
+      }
+    },
+    {
+      "title": "Where's Waldo? (A Photo Tagging App)",
+      "description": "This is an assignment in The Odin Project. I practiced React Hooks (useReducer, useContext, useEffect, useState, useRef, forwardRef) besides Firebase Storage and Firestore.",
+      "tags": ["React", "Firebase", "Vanilla CSS"],
+      "links": {
+        "gh": "https://github.com/rafetbasturk/odin-waldo",
+        "live": "https://odin-waldo.vercel.app/"
+      }
+    },
+    {
+      "title": "Shopping Cart",
+      "description": "A simple shopping cart I coded for the Odin Project. I practiced ContextApi in React.",
+      "tags": ["React", "Vanilla CSS"],
+      "links": {
+        "gh": "https://github.com/rafetbasturk/odin-shopping-cart",
+        "live": "https://rafet-shopping-cart.netlify.app/"
+      }
+    },
+    {
+      "title": "Battleship",
+      "description": "Factory functions and Test Driven Development were my main focus on this Odin Project built with Webpack.",
+      "tags": ["HTML", "Vanilla CSS", "Vanilla JS", "Webpack"],
+      "links": {
+        "gh": "https://github.com/rafetbasturk/odin-battleship",
+        "live": "https://rafetbattleship.netlify.app/"
+      }
+    },
+    {
+      "title": "Where In The World?",
+      "description": "This is a solution to the REST Countries API with color theme switcher challenge on Frontend Mentor.",
+      "tags": ["React", "React-router-dom", "SCSS"],
+      "links": {
+        "gh": "https://github.com/rafetbasturk/c37",
+        "live": "https://rafetbasturk-rest-countries.netlify.app/"
+      }
+    },
+    {
+      "title": "Todo App",
+      "description": "A Frontend Mentor challenge with active and completed todos feature.",
+      "tags": ["HTML", "SCSS", "Jquery"],
+      "links": {
+        "gh": "https://github.com/rafetbasturk/c24/blob/main/index.html",
+        "live": "https://rafetbasturk.github.io/c24/"
+      }
+    },
+    {
+      "title": "Jobify",
+      "description": "",
+      "tags": ["MongoDB", "Express", "React", "NodeJS", "Styled Components", "React Query"],
+      "links": {
+        "gh": "https://github.com/rafetbasturk/jobify-v2",
+        "live": "https://mern-jobify-v2-5nvt.onrender.com/"
+      }
+    },
+    {
+      "title": "Crowdfunding",
+      "description": "",
+      "tags": ["HTML", "SCSS", "Vanilla JS"],
+      "links": {
+        "gh": "https://github.com/rafetbasturk/c36",
+        "live": "https://rafetbasturk.github.io/c36/"
+      }
+    }
+  ],
+  "contact": {
+    "heading": "Contact me",
+    "text1": "Please contact me at ",
+    "text2": " or through this form.",
+    "email": "rafetbasturk@yahoo.com",
+    "emailPlaceholder": "your email",
+    "textareaPlaceholder": "your message"
+  },
+  "footer": {
+    "text": "Built with Next.js(14.0.3), Typescript, Tailwindcss, Framer Motion & Resend."
+  },
+  "metadata": {
+    "title": "Rafet Basturk | Personal Portfolio",
+    "description": "Full stack web developer",
+    "keywords": ["Rafet Basturk", "Portfolio", "Full Stack Web Developer", "Next.js", "React", "JavaScript"]
+  }
+}
