@@ -11,6 +11,7 @@ export default function Header() {
     <header className="header">
       <button
         className="text-3xl lg:hidden align-middle relative cursor-pointer"
+        aria-label="open/close navigation"
         onClick={() => setIsNavOpen(!isNavOpen)}
       >
         {!isNavOpen ? <AiOutlineMenuUnfold /> : <AiOutlineClose />}

@@ -83,6 +83,7 @@ export default function Intro() {
             target="_blank"
             rel="noopener noreferrer"
             locale={false}
+            aria-label="link to CV"
             // download
             className="btn-secondary borderBlack group"
           >
@@ -94,6 +95,7 @@ export default function Intro() {
             className="btn-icon group borderBlack"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="link to linkedin profile"
           >
             <BsLinkedin className="text-[1.2rem] group-hover:scale-125 transition" />
           </a>
@@ -102,6 +104,7 @@ export default function Intro() {
             className="btn-icon group borderBlack"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="link to github profile"
           >
             <FaGithub className="text-[1.2rem] group-hover:scale-125 transition" />
           </a>

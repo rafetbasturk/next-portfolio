@@ -49,6 +49,7 @@ export default function Project({
               <Tooltip id="warning" />
               <a
                 href={links.gh}
+                aria-label="link to project's github repo"
                 target="_blank"
                 className="p-3 text-lg transition bg-light-primary-onContainer text-light-primary-onBase hover:bg-light-primary-onBase hover:text-light-primary-onContainer rounded-full shadow-light-primary-onContainer  shadow-md"
               >
@@ -58,6 +59,7 @@ export default function Project({
                 data-tooltip-id="warning"
                 data-tooltip-content="Because I use free instance on Render, it may take up some time to start server."
                 href={links.live}
+                aria-label="link to project's webpage"
                 target="_blank"
                 className="p-3 text-lg transition bg-light-primary-onContainer text-light-primary-onBase hover:bg-light-primary-onBase hover:text-light-primary-onContainer rounded-full shadow-light-primary-onContainer  shadow-md"
               >

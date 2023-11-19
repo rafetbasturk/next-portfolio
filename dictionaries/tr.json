@@ -29,7 +29,7 @@
   "intro": {
     "text": "Merhaba, ben Rafet. Web geliştirmeye 2019 yılında çevrimiçi kurslar alarak başladım. 'MERN Stack' teknolojilerinin gücünden yararlanarak web uygulamaları geliştiriyorum.",
     "btn1": "İletişim",
-    "btn2": "CV İndir",
+    "btn2": "CV",
     "heading": "Giriş"
   },
   "about": {
@@ -44,7 +44,7 @@
         "MongoDB, Express, React ve Node.js": " ile Tam Ölçekli Web Uygulamaları (Frontend + Backend),"
       },
       {
-        "Node.js ve Express": " kullanarak RESTful Web API'leri (Backend) kullanarak web uygulamaları geliştirmekteyim."
+        "Node.js ve Express": " kullanarak RESTful Web API'leri (Backend) geliştirmekteyim."
       }
     ]
   },
@@ -136,6 +136,13 @@
   "metadata": {
     "title": "Rafet Basturk | Kişisel Portföy",
     "description": "Full stack web geliştirici",
-    "keywords": ["Rafet Basturk", "Portföy", "Full Stack Web Geliştirici", "Next.js", "React", "JavaScript"]
+    "keywords": [
+      "Rafet Basturk",
+      "Portföy",
+      "Full Stack Web Geliştirici",
+      "Next.js",
+      "React",
+      "JavaScript"
+    ]
   }
 }

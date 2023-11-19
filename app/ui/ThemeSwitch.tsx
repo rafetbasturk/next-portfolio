@@ -13,6 +13,7 @@ export default function ThemeSwitch() {
       initial={{ opacity: 0, right: "-1rem" }}
       animate={{ opacity: 1, right: "1rem" }}
       transition={{ duration: 0.3 }}
+      aria-label="theme switch"
     >
       <div className="group-hover:scale-125 group-active:scale-105 transition-all">
         {theme === "light" ? <BsSun /> : <BsMoon />}
