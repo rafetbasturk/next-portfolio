@@ -120,6 +120,31 @@
         "gh": "https://github.com/rafetbasturk/c24/blob/main/index.html",
         "live": "https://rafetbasturk.github.io/c24/"
       }
+    },
+    {
+      "title": "Jobify",
+      "description": "",
+      "tags": [
+        "MongoDB",
+        "Express",
+        "React",
+        "NodeJS",
+        "Styled Components",
+        "React Query"
+      ],
+      "links": {
+        "gh": "https://github.com/rafetbasturk/jobify-v2",
+        "live": "https://mern-jobify-v2-5nvt.onrender.com/"
+      }
+    },
+    {
+      "title": "Crowdfunding",
+      "description": "",
+      "tags": ["HTML", "SCSS", "Vanilla JS"],
+      "links": {
+        "gh": "https://github.com/rafetbasturk/c36",
+        "live": "https://rafetbasturk.github.io/c36/"
+      }
     }
   ],
   "contact": {

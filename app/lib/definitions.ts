@@ -116,6 +116,7 @@ export type Theme = "light" | "dark";
 
 export type ThemeContextProviderProps = {
   children: ReactNode | ReactNode[];
+  mode: Theme;
 };
 
 export type ThemeContextType = {

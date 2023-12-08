@@ -8,9 +8,10 @@ import { Toaster } from "react-hot-toast";
 import Footer from "@/app/ui/Footer";
 import ThemeSwitch from "@/app/ui/ThemeSwitch";
 import ThemeContextProvider from "@/app/contexts/themeContext";
-import { ParamsType, LayoutProps } from "../lib/definitions";
+import { ParamsType, LayoutProps, Theme } from "../lib/definitions";
 import { getDictionary } from "./dictionaries";
 import { LanguageContextProvider } from "../contexts/languageContext";
+import { cookies } from "next/headers";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -24,7 +25,9 @@ export async function generateMetadata({
   return {
     ...dict.metadata,
     generator: "Next.js",
-    authors: [{ name: "Rafet Basturk", url: "https://github.com/rafetbasturk" }],
+    authors: [
+      { name: "Rafet Basturk", url: "https://github.com/rafetbasturk" },
+    ],
     creator: "Rafet Basturk",
     publisher: "Rafet Basturk",
   };
@@ -34,14 +37,16 @@ export default async function RootLayout({
   children,
   params: { lang },
 }: LayoutProps) {
+  const cookieStore = cookies();
+  const mode = cookieStore.get("theme")?.value as Theme;
   const dict = await getDictionary(lang);
 
   return (
-    <html lang={lang}>
+    <html lang={lang} className={mode ?? ""}>
       <body
         className={`${inter.className} antialiased max-w-screen-xl m-auto bg-light-bg-base text-light-primary-base dark:bg-dark-bg-base dark:text-dark-primary-base`}
       >
-        <ThemeContextProvider>
+        <ThemeContextProvider mode={mode}>
           <LanguageContextProvider dict={dict}>
             <ActiveSessionContextProvider>
               <Header />

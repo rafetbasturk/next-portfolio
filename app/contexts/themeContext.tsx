@@ -3,42 +3,68 @@
 import {
   createContext,
   useContext,
-  useEffect,
+  useLayoutEffect,
   useState,
 } from "react";
 import { Theme, ThemeContextProviderProps, ThemeContextType } from "../lib/definitions";
+import { mediaQuery, setCookie, setDocumentClass } from "./utils";
 
 const ThemeContext = createContext<ThemeContextType | null>(null);
 
 export default function ThemeContextProvider({
   children,
+  mode
 }: ThemeContextProviderProps) {
-  const [theme, setTheme] = useState<Theme>("light");
+  const [theme, setTheme] = useState<Theme>(mode);
 
   const toggleTheme = () => {
     if (theme === "light") {
       setTheme("dark");
-      localStorage.setItem("theme", "dark");
-      document.documentElement.classList.add("dark");
+      setCookie("dark");
+      setDocumentClass("dark");
     } else {
       setTheme("light");
-      localStorage.setItem("theme", "light");
-      document.documentElement.classList.remove("dark");
+      setCookie("light");
+      setDocumentClass("light");
     }
   };
 
-  useEffect(() => {
-    const localTheme = localStorage.getItem("theme") as Theme | null;
-
-    if (localTheme) {
-      setTheme(localTheme);
-      if (localTheme === "dark") {
-        document.documentElement.classList.add("dark");
+  useLayoutEffect(() => {
+    if (mode === undefined) {
+      if (matchMedia(mediaQuery).matches) {
+        setTheme("dark");
+        setCookie("dark");
+        setDocumentClass("dark");
+      } else {
+        setTheme("light");
+        setDocumentClass("light");
+        setCookie("light");
       }
-    } else if (matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-      document.documentElement.classList.add("dark");
     }
+  }, [mode]);
+
+  useLayoutEffect(() => {
+    const media = window.matchMedia(mediaQuery);
+
+    const handleChange = () => {
+      if (media.matches) {
+        setTheme("dark");
+        setCookie("dark");
+        setDocumentClass("dark");
+      } else {
+        setTheme("light");
+        setDocumentClass("light");
+        setCookie("light");
+      }
+    };
+
+    // Add event listener for changes in the OS theme
+    media.addEventListener("change", handleChange);
+
+    // Cleanup: remove the event listener when the component unmounts
+    return () => {
+      media.removeEventListener("change", handleChange);
+    };
   }, []);
 
   return (
