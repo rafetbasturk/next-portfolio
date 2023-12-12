@@ -91,7 +91,7 @@ export default function Intro() {
             <HiDownload className="text-[1.2rem] opacity-70 group-active:translate-y-1 transition" />
           </Link>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/rafetbasturk/"
             className="btn-icon group borderBlack"
             target="_blank"
             rel="noopener noreferrer"
